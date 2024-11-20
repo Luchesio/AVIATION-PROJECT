@@ -1,3 +1,28 @@
+body
+{
+    animation: fadeInUp 1.2s ease-in-out, slideIn 1.2s ease-in-out;
+}
+/* Fade-in effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle slide-in from left */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 .filtersection
 {
     background: url('img/Image 18.svg');
