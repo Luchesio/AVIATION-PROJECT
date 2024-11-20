@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="offers.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <!-- displays after loading -->
+    <div id="main-content" style="display: none">
+      <!-- top head -->
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-12 d-flex justify-content-between"
+            style="height: 64px"
+          >
+            <div class="topleft">
+              <img
+                src="img/Image 30.svg"
+                alt=""
+                style="width: 35px; height: 35px"
+              />
+              <p
+                style="
+                  color: #e8618c;
+                  font-weight: 600;
+                  font-size: 20;
+                  line-height: 30px;
+                "
+              >
+                E-flight
+              </p>
+            </div>
+            <div class="topright">
+              <p
+                style="
+                  color: #171a1f;
+                  font-weight: 700;
+                  font-size: 12;
+                  line-height: 20px;
+                "
+              >
+                USD
+              </p>
+              <img
+                src="img/Globe 2.svg"
+                alt=""
+                style="width: 20px; height: 20px"
+              />
+              <img
+                src="img/Bell 2.png"
+                alt=""
+                style="width: 20px; height: 20px"
+              />
+              <img
+                src="img/Avatar 6.svg"
+                alt=""
+                style="width: 26px; height: 26px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ending of top head -->
+
+      <div class="line"></div>
+      <!-- body image -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12" style="height: 317px; margin-bottom: 30px">
+            <img
+              src="img/Image 31.svg"
+              alt=""
+              style="width: 100%; height: 100%"
+            />
+          </div>
+          <!-- ending of body image -->
+
+          <!-- left sub body -->
+          <div class="col-4 leftsubsection">
+            <!-- b of sortby header -->
+            <div class="sortbycontainer">
+              <div class="sortbyheader">
+                <div
+                  style="
+                    width: 94px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                  "
+                >
+                  <img
+                    src="img/Sort tool 1.svg"
+                    alt=""
+                    style="width: 16px; height: 16px"
+                  />
+                  <p
+                    style="
+                      color: #323842;
+                      font-weight: 700;
+                      font-size: 20px;
+                      line-height: 30px;
+                    "
+                  >
+                    Sort by
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  style="border: none; background-color: white"
+                >
+                  Reset
+                </button>
+              </div>
+              <div class="containerline"></div>
+              <div class="pricecontainer">
+                <p
+                  style="
+                    color: #323842;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                  "
+                >
+                  Price
+                </p>
+                <img
+                  src="img/Chevron up large 4.svg"
+                  alt=""
+                  style="width: 20px; height: 20px"
+                />
+              </div>
+              <div
+                style="
+                  width: 107px;
+                  height: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                "
+              >
+                <div class="price">
+                  <input type="radio" id="lowest" style="margin-right: 10px" />
+                  <label for="lowest" style="white-space: nowrap"
+                    >Lowest price</label
+                  >
+                </div>
+                <div class="price">
+                  <input type="radio" id="highest" style="margin-right: 10px" />
+                  <label for="highest " style="white-space: nowrap"
+                    >Highest price</label
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- e of sort by container -->
+
+            <!-- b of filter container -->
+            <div class="filtercontainer">
+              <!-- b of filter head -->
+              <div class="filterheader">
+                <div
+                  style="
+                    width: 94px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+                  "
+                >
+                  <img
+                    src="img/Vector.svg"
+                    alt=""
+                    style="width: 16px; height: 16px"
+                  />
+                  <p
+                    style="
+                      color: #323842;
+                      font-weight: 700;
+                      font-size: 20px;
+                      line-height: 30px;
+                    "
+                  >
+                    Filters
+                  </p>
+                </div>
+                <button
+                  type="submit"
+                  style="border: none; background-color: white"
+                >
+                  Reset
+                </button>
+              </div>
+              <!-- e of filter head -->
+
+              <div class="containerline"></div>
+              <!-- b of transit head -->
+              <div class="transit">
+                <p
+                  style="
+                    color: #323842;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                  "
+                >
+                  No.of Transit
+                </p>
+                <img
+                  src="img/Chevron up large 4.svg"
+                  alt=""
+                  style="width: 20px; height: 20px"
+                />
+              </div>
+              <!-- e of transit head -->
+
+              <!-- b of direct checkbox -->
+              <div
+                style="
+                  width: 107px;
+                  height: 50px;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                "
+              >
+                <div class="direct">
+                  <input
+                    type="checkbox"
+                    id="lowest"
+                    style="margin-right: 10px"
+                  />
+                  <label for="lowest" style="white-space: nowrap">Direct</label>
+                </div>
+                <div class="direct">
+                  <input
+                    type="checkbox"
+                    id="highest"
+                    style="margin-right: 10px"
+                  />
+                  <label for="highest " style="white-space: nowrap"
+                    >1 Transit</label
+                  >
+                </div>
+              </div>
+              <!-- e of direct checkbox -->
+
+              <div class="containerline2"></div>
+
+              <!-- b of transitp head -->
+              <div class="transitp">
+                <p
+                  style="
+                    color: #323842;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                  "
+                >
+                  Transit point
+                </p>
+                <img
+                  src="img/Chevron up large 4.svg"
+                  alt=""
+                  style="width: 20px; height: 20px"
+                />
+              </div>
+              <!-- e of transitp head -->
+
+              <!-- b of osaka -->
+              <div class="osaka">
+                <div class="price">
+                  <input
+                    type="checkbox"
+                    id="lowest2"
+                    style="margin-right: 10px"
+                  />
+                  <label for="lowest2" style="white-space: nowrap"
+                    >OSAKA(ITM)</label
+                  >
+                </div>
+                <div class="price">
+                  <input
+                    type="checkbox"
+                    id="highest2"
+                    style="margin-right: 10px"
+                  />
+                  <label for="highest2 " style="white-space: nowrap"
+                    >KUALA LUMPAR(KUL)</label
+                  >
+                </div>
+              </div>
+              <!-- e of osaka -->
+
+              <div class="containerline2"></div>
+
+              <!-- b of transitd -->
+              <div class="transitd">
+                <p
+                  style="
+                    color: #323842;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                  "
+                >
+                  Transit duration
+                </p>
+                <img
+                  src="img/Chevron up large 4.svg"
+                  alt=""
+                  style="width: 20px; height: 20px"
+                />
+              </div>
+              <!-- e of transitd -->
+            </div>
+          </div>
+          <!-- ending of left subsection -->
+
+          <!-- b of right subsection -->
+          <div class="col-8">
+            <div class="row">
+              <!-- b of 1st section -->
+              <div class="col-12" style="margin-bottom: 15px">
+                <div
+                  style="
+                    width: 337px;
+                    height: 36px;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                  "
+                >
+                  <select
+                    style="
+                      width: 135px;
+                      height: 36px;
+                      background-color: #f3f4f6;
+                      border: 1px solid #f3f4f6;
+                      border-radius: 18px;
+                    "
+                  >
+                    <option value="one-way">One Way</option>
+                    <option value="round-trip">Round Trip</option>
+                  </select>
+
+                  <div style="width: 56px; height: 36px"></div>
+                  <select
+                    style="
+                      width: 135px;
+                      height: 36px;
+                      background-color: #f3f4f6;
+                      border: 1px solid #f3f4f6;
+                      border-radius: 18px;
+                    "
+                  >
+                    <option value="one-way">One Way</option>
+                    <option value="round-trip">Round Trip</option>
+                  </select>
+                </div>
+              </div>
+              <!-- e of 1st section -->
+              <!-- b of 2nd section -->
+              <div
+                class="col-12"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  flex-wrap: nowrap;
+                  height: 36px;
+                  margin-bottom: 30px;
+                  align-items: center;
+                "
+              >
+                <div class="displayofplaces">
+                  <div
+                    style="
+                      height: 16px;
+                      width: 30px;
+                      display: flex;
+                      margin-left: 15px;
+                      text-align: center;
+                    "
+                  >
+                    <img
+                      src="img/Vector (1).svg"
+                      alt=""
+                      style="margin-right: 10px; width: 16px; height: 16px"
+                    />
+                    <p class="lagos">Lagos</p>
+                  </div>
+                </div>
+                <img
+                  src="img/Swap vertical 2.svg"
+                  alt=""
+                  style="width: 20px; height: 20px"
+                />
+                <div class="displayofplaces">
+                  <div
+                    style="
+                      height: 16px;
+                      width: 30px;
+                      display: flex;
+                      margin-left: 15px;
+                    "
+                  >
+                    <img
+                      src="img/Vector (1).svg"
+                      alt=""
+                      style="margin-right: 10px; width: 16px; height: 16px"
+                    />
+                    <p class="lagos">Abuja</p>
+                  </div>
+                </div>
+                <input type="date" class="displayofplaces" />
+                <img
+                  src="img/Icon Button 1.svg"
+                  alt=""
+                  style="width: 36px; height: 36px"
+                />
+              </div>
+              <!-- e of 2nd section -->
+
+              <!-- b of 3rd section -->
+
+              <div class="col-12" style="height: 67px">
+                <div
+                  style="
+                    height: 67px;
+                    background-color: #2c35e0;
+                    border: 1px solid #2c35e0;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    padding-top: 0px;
+                    padding-left: 5px;
+                  "
+                >
+                  <div class="rdsection">
+                    <p>Feb,18th</p>
+                    <p>180usd</p>
+                  </div>
+                  <div class="rdsection">
+                    <p></p>
+                    <p></p>
+                  </div>
+                  <div class="rdsection">
+                    <p></p>
+                    <p></p>
+                  </div>
+                  <div class="rdsection">
+                    <p></p>
+                    <p></p>
+                  </div>
+                  <div class="rdsection">
+                    <p></p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ending of right subsection -->
+        </div>
+      </div>
+    </div>
+
+    <script src="offers.js"></script>
+  </body>
+</html>
