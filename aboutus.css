@@ -38,7 +38,7 @@ body{
 
   .topleft
   {
-    width: 102px;
+    width: 116px;
     height: 64px;
     display: flex;
     justify-content: space-between;
@@ -149,4 +149,109 @@ h3{
     font-size: 4em;
     font-weight: 500;
     
+}
+.teamcontainer
+{
+  background-color: black;
+  height: 300px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  
+}
+.heading
+{
+  color: white;
+}
+.teambutton
+{
+  height: 60px;
+  width: 150px;
+  background-color: white;
+  color: #e8618c;
+  font-weight: 600;
+  border: 1px solid white;
+  border-radius: 8px;
+
+}
+.teambutton2
+{
+  height: 60px;
+  width: 200px;
+  background-color: white;
+  color: #e8618c;
+  font-weight: 600;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+footer{
+  background-color: #F8F9FA;
+  height: 280px ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button :hover
+{
+  background-color: pink;
+}
+.subscribe
+{
+  height: 36px;
+  width: 91px;
+  background-color: #636AE8;
+  color: white;
+  border: 1px solid #636AE8;
+  border-radius: 18px;
+}
+.footheader
+{
+  font-size: 20px;
+  font-weight: 700 ;
+  line-height: 30px ;
+  color: #171A1F;
+}
+.foottext
+{
+  font-size: 14px;
+  font-weight: 400px ;
+  line-height: 22px ;
+  color: #171A1F;
+}
+a
+{
+  text-decoration: none;
+}
+.socialcontainer
+{
+  width: 88px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+}
+.end{
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  align-self: flex-end;
+}
+.endtext
+{
+  font-weight: 400;
+  color: #9095A0;
+  line-height: 22px ;
+  font-size: 14px;
 }

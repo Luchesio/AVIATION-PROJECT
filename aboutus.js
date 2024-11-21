@@ -38,3 +38,24 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(leftCol);
     observer.observe(rightCol);
 });
+
+
+
+const emailInput = document.getElementById("email");
+  const emailError = document.getElementById("emailError");
+  const form = document.getElementById("emailForm");
+
+  form.addEventListener("submit", (e) => {
+    // Prevent form submission if email is invalid
+    if (!emailInput.checkValidity()) {
+      e.preventDefault(); // Stop form submission
+      emailError.style.display = "block"; // Show error message
+    } else {
+      emailError.style.display = "none"; // Hide error message
+    }
+  });
+
+  emailInput.addEventListener("input", () => {
+    // Hide error message as user types
+    emailError.style.display = emailInput.checkValidity() ? "none" : "block";
+  });
