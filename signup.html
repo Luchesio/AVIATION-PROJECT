@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+     body,* {
+      font-family: 'Archivo', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   
+    }
+    body {
+            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+                        url('https://plus.unsplash.com/premium_photo-1679830513886-e09cd6dc3137?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+                        no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 400px;
+            width: 90%;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+    h1 {
+        font-size: 32px;
+            font-weight: 700;
+            color: #E8618C;
+      margin-left: 0px;
+      margin-bottom: 20px;
+    }
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .form-label {
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+    color: #555;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #E8618C;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+  }
+
+  input:focus {
+    border-color: #E8618C;
+    outline: none;
+  }
+    button:hover {
+      background-color: #a51f4986;
+    }
+    button{
+        background: linear-gradient(90deg, #E8618C 0%, #FF6CAB 100%);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 120px;
+            height: 50px;
+            transition: transform 0.2s, box-shadow 0.2s;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+    .airplane-decoration {
+            position: absolute;
+            width: 30px;
+            animation: rotate 6s linear infinite;
+            opacity: 0.8;
+        }
+
+        .airplane-top {
+            top: -15px;
+            left: 10%;
+        }
+
+        .airplane-bottom {
+            bottom: 45px;
+            right: 10%;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    footer {
+        font-family: Archivo;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+</style>
+<body>
+    <!--When the user inputs his/her name the name should show on the my flights page Ensure the form in signup.html submits data to a server-side script (PHP)-->
+    <header>
+        <div class="one" style="display: flex; align-items: center; gap: 10px">
+            <div class="image">
+              <img src="Group.png" alt="aeroplane picture" />
+            </div>
+            <div class="text">Aero <span>Lert</span></div>
+          </div>
+    </header>
+    <img src="Group.png" alt="airplane decoration" class="airplane-decoration airplane-top">
+    <img src="Group.png" alt="airplane decoration" class="airplane-decoration airplane-bottom">
+    <div class="container">
+       <div class="signup" style="display: flex;align-items: center;justify-content: center;">
+        <h1>Signup</h1>
+       </div>
+        <form action="signup-action.php" method="POST">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+   
+      <footer>
+       BOOK YOUR FLIGHTS WITH US TODAY
+      </footer>
+</body>
+</html>
