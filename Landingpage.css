@@ -1,49 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*,body{
+
+*, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     scroll-behavior: smooth;
+    animation: fadeInUp 1.2s ease-in-out, slideIn 1.2s ease-in-out;
 }
-.title{
+
+/* Fade-in effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtle slide-in from left */
+@keyframes slideIn {
+    0% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.title {
     display: flex;
     align-items: center;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.ft{
+
+.ft {
     font-family: Archivo;
-font-size: 28px;
-font-weight: 400;
-line-height: 42px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-color: #000000;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
 }
+
 .filtersection {
     position: relative;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('Image 18.png') no-repeat center center/cover;
+                url('img/Image 18.svg') no-repeat center center/cover;
     background-blend-mode: multiply; /* Darkens the image */
+
+
     height: 640px;
     display: flex;
     justify-content: center;
