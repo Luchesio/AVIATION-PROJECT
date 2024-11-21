@@ -63,11 +63,11 @@
               margin-left: 30px;
             "
           >
-            <a href=""> Home</a>
-            <a href="">Flight Status</a>
-            <a href="">My flights</a>
-            <a href="">Flight History</a>
-            <a href="">Notifications</a>
+            <a href="#" class="active"> Home</a>
+            <a href="#">Flight Status</a>
+            <a href="#">My flights</a>
+            <a href="#">Flight History</a>
+            <a href="#">Notifications</a>
           </div>
         </div>
         
@@ -182,10 +182,14 @@
     <script>
       document.getElementById("scroll-arrow").addEventListener("click", function () {
         window.scrollBy({
-          top: window.innerHeight, // Scroll down by the viewport height
+          top: window.innerHeight,
           behavior: "smooth",     // Smooth scrolling
         });
       });
+
+      const navLinks = document.querySelectorAll('.filtersection a');
+
+ 
     </script>
     
   </body>
