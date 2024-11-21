@@ -11,6 +11,12 @@
     />
   </head>
   <body>
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+
+      <!-- displays after loading -->
+    <div id="main-content" style="display: none">
     <header>
       <div class="one" style="display: flex; align-items: center; gap: 10px">
         <div class="image">
@@ -337,12 +343,12 @@ color: #323842;
  
 </footer>
 <div class="footer-bottom" style="background-color: #bcc1ca28;">
-  © 2022 Company, Inc.
+  © 2024 Company, Inc.
    <a href="#">Privacy</a>
    <a href="#">Terms</a>
  </div>
 
-
+</div>
 
 
 
@@ -384,6 +390,22 @@ color: #323842;
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
     <script>
+
+      // Show loading screen initially
+document.body.classList.add("loading");
+
+// Set a timeout to hide the loading screen after 3 seconds (3000 ms)
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    document.getElementById("loading-screen").style.display = "none";
+    document.getElementById("main-content").style.display = "block";
+    document.body.classList.remove("loading");
+  }, 3000); // 3000 ms = 3 seconds
+});
+
+
+
+
       $(document).ready(function () {
   // Function to format dropdown options with images
   function formatOption(option) {
