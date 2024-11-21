@@ -1,7 +1,16 @@
-body
-{
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
     animation: fadeInUp 1.2s ease-in-out, slideIn 1.2s ease-in-out;
 }
+
 /* Fade-in effect */
 @keyframes fadeInUp {
     0% {
@@ -23,9 +32,49 @@ body
         transform: translateX(0);
     }
 }
-.filtersection
-{
-    background: url('img/Image 18.svg');
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ft {
+    font-family: Archivo;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtersection {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('img/Image 18.svg') no-repeat center center/cover;
+    background-blend-mode: multiply; /* Darkens the image */
+
+
     height: 640px;
     display: flex;
     justify-content: center;
@@ -33,8 +82,10 @@ body
     flex-direction: column;
     flex-wrap: nowrap;
     margin-bottom: 50px;
-}
-
+    color: white; /* Ensure text is visible */
+    text-align: center;
+  }
+  
 a{
     text-decoration: none;
     color: #565E6C;
@@ -59,3 +110,152 @@ h5
     line-height: 30px;
     margin-bottom: 15px;
 }
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+p{
+    font-family: Archivo;
+font-size: 28px;
+font-weight: 400;
+line-height: 42px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #000000;
+}
+
+footer {
+    background-color: #bcc1ca28;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+  }
+  
+  .grpone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .grpone img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .email input {
+    background-color: white;
+    width: 223px;
+    height: 35px;
+    padding: 0 12px;
+    border-radius: 18px;
+    border: 1px solid #BCC1CA;
+    color: black;
+  }
+  
+  .email input::placeholder {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #BCC1CA;
+  }
+  
+  .email button {
+    width: 91px;
+    height: 36px;
+    padding: 7px 12px;
+    border-radius: 18px;
+    background-color: #636AE8;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .links div {
+    text-align: left;
+  }
+  h4{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #171A1F;
+  }
+
+  .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li {
+    margin: 5px 0;
+  
+  }
+  
+  .links a {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 14px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #171A1F;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    color: #424955;
+    height: 30px;
+   
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #424955;
+  }
+  h6{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #636AE8;
+  }
+  
