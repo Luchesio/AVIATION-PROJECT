@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    scroll-behavior: smooth;
+}
 .title{
     display: flex;
     align-items: center;
@@ -98,3 +101,130 @@ text-underline-position: from-font;
 text-decoration-skip-ink: none;
 color: #000000;
 }
+
+footer {
+    background-color: #bcc1ca28;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+  }
+  
+  .grpone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .grpone img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .email input {
+    background-color: white;
+    width: 223px;
+    height: 35px;
+    padding: 0 12px;
+    border-radius: 18px;
+    border: 1px solid #BCC1CA;
+    color: black;
+  }
+  
+  .email input::placeholder {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #BCC1CA;
+  }
+  
+  .email button {
+    width: 91px;
+    height: 36px;
+    padding: 7px 12px;
+    border-radius: 18px;
+    background-color: #636AE8;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .links div {
+    text-align: left;
+  }
+  h4{
+    font-family: Inter;
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #171A1F;
+  }
+
+  .links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links li {
+    margin: 5px 0;
+  
+  }
+  
+  .links a {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 14px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #171A1F;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    color: #424955;
+    height: 30px;
+   
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #424955;
+  }
+  h6{
+    font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #636AE8;
+  }
+  
